@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tut</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        table > tr{
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .odd_row{
+            background-color: tan;
+            transition: all .2s;
+        }
+
+        .even_row{
+            background-color: thistle;
+            transition: all .2s;
+        }
+
+        .odd_row:hover, .even_row:hover{
+            opacity: .8;
+        }
+        #nextbtn{
+            margin-top: 5px;
+        }
+        #prevbtn{
+           margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <span>Result:</span>
+    &nbsp;    &nbsp;
+    <span id="result"></span><br>
+    <button id="get_result">Do Something</button><br>
+    <button id="new_button">New Button</button>
+    <br>
+    <label for="uploadfile">Select A File (csv)</label>
+    &nbsp;
+    &nbsp;
+    <input type="file" id='uploadfile'>
+    <br><br><br>
+    <div class="datatable_container">
+        <table>
+
+        </table>
+    </div>
+    <button id="prevBtn" class="float-left submit-button" >previous</button>
+    <span id="pageNum"></span>
+    <button id="nextBtn" class="float-right submit-button" >next</button>
+    
+    
+    <script src="js/intro.js"></script>
+    <script src="js/advanced.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/weather_prediction.js"></script>
+</body>
+</html>
